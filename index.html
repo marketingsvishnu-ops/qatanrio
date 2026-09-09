@@ -1,123 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=devmulticric-width, initial-scale=1.0">
-<title>multicric Support</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Sports</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-body{
-    height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=1600') center center/cover no-repeat;
-}
+    body {
+      background: #f4f7f6;
+      color: #222;
+    }
 
-.overlay{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.65);
-}
+    header {
+      background: #075e36;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
-.card{
-    position:relative;
-    z-index:2;
-    width:90%;
-    max-width:520px;
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(10px);
-    border-radius:24px;
-    padding:30px;
-    text-align:center;
-    color:#fff;
-    border:1px solid rgba(255,255,255,.15);
-}
+    nav {
+      background: #043d25;
+      padding: 12px;
+      text-align: center;
+    }
 
-.logo{
-    font-size:42px;
-    font-weight:900;
-    color:#ffc400;
-    margin-bottom:15px;
-    letter-spacing:2px;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
 
-h1{
-    margin-bottom:15px;
-    font-size:30px;
-}
+    .hero {
+      background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+                  url("https://images.unsplash.com/photo-1531415074968-036ba1b575da")
+                  center/cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
 
-p{
-    line-height:1.7;
-    color:#e5e5e5;
-}
+    .hero h1 {
+      font-size: 50px;
+    }
 
-.btn{
-    display:inline-block;
-    margin-top:25px;
-    padding:16px 30px;
-    background:#25D366;
-    color:#fff;
-    text-decoration:none;
-    border-radius:50px;
-    font-size:18px;
-    font-weight:bold;
-    transition:.3s;
-}
+    .hero p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
 
-.btn:hover{
-    background:#1ebe5d;
-    transform:scale(1.05);
-}
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 40px auto;
+    }
 
-.features{
-    margin-top:25px;
-    text-align:left;
-}
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-.features div{
-    background:rgba(255,255,255,.08);
-    padding:12px;
-    margin-bottom:10px;
-    border-radius:12px;
-}
-</style>
+    .card {
+      background: white;
+      padding: 25px;
+      flex: 1;
+      min-width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,.15);
+    }
+
+    .card h2 {
+      color: #075e36;
+      margin-bottom: 10px;
+    }
+
+    .score {
+      background: #075e36;
+      color: white;
+      padding: 20px;
+      margin-top: 15px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #043d25;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="overlay"></div>
+  <header>
+    <h1>🏏 Cricket Sports</h1>
+    <p>Your Ultimate Cricket Hub</p>
+  </header>
 
-<div class="card">
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Matches</a>
+    <a href="#">Teams</a>
+    <a href="#">Players</a>
+    <a href="#">News</a>
+  </nav>
 
-<div class="logo">multicric</div>
+  <section class="hero">
+    <div>
+      <h1>Welcome to Cricket World</h1>
+      <p>Live the passion. Feel the game. Love Cricket.</p>
+    </div>
+  </section>
 
-<h1>Contact Our Support Team</h1>
+  <div class="container">
 
-<p>
-Get assistance, information, and answers to your questions from our support team.
-</p>
+    <h1>Latest Matches</h1>
 
-<a class="btn"
-href="https://wa.me/+447523709988?text=Hello%20multicric%2C%20I%20would%20like%20more%20information.">
-Contact on WhatsApp
-</a>
+    <div class="cards">
 
-<div class="features">
-    <div>✅ Fast Support</div>
-    <div>✅ Easy Assistance</div>
-    <div>✅ Community Updates</div>
-    <div>✅ User Guidance</div>
-</div>
+      <div class="card">
+        <h2>India vs Australia</h2>
+        <p>International Cricket Match</p>
 
-</div>
+        <div class="score">
+          <strong>IND 245/6</strong><br>
+          Australia 198/8
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>England vs Pakistan</h2>
+        <p>T20 International</p>
+
+        <div class="score">
+          <strong>PAK 176/5</strong><br>
+          England 170/7
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>South Africa vs New Zealand</h2>
+        <p>ODI Cricket</p>
+
+        <div class="score">
+          <strong>NZ 289/7</strong><br>
+          South Africa 250/9
+        </div>
+      </div>
+
+    </div>
+
+    <br><br>
+
+    <h1>Popular Cricket Players</h1>
+
+    <div class="cards">
+
+      <div class="card">
+        <h2>Virat Kohli</h2>
+        <p>Indian batsman and former captain.</p>
+      </div>
+
+      <div class="card">
+        <h2>Babar Azam</h2>
+        <p>Pakistani top-order batsman.</p>
+      </div>
+
+      <div class="card">
+        <h2>Ben Stokes</h2>
+        <p>English all-rounder and captain.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Cricket Sports | All Rights Reserved</p>
+  </footer>
 
 </body>
 </html>
